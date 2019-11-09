@@ -4,28 +4,36 @@ import Home from "./Components/Home/Home";
 import Culture from "./Components/Culture/Culture";
 import TattooStyles from "./Components/TattooStyles/TattooStyles";
 import Login from "./Components/Login/Login";
-import TattooStylesInfo from './Components/TattooStyles/TatooStylesInfo';
-import MOCK_DATA from './Components/DataFiles/MOCK_DATA';
-
+import TattooStylesInfo from "./Components/TattooStyles/TatooStylesInfo";
+import MOCK_DATA from "./Components/DataFiles/MOCK_DATA";
 
 export default function App() {
   return (
     <Router>
-      <ul>
-        <Link to="/">Home</Link>
-        <Link to="/culture">Culture</Link>
-        <Link to="/tattoostyles">Tattoo Styles</Link>
-        <Link to="login">Login</Link>
+      <ul className="navmenu">
+        <Link to="/" className="navitem">
+          Home
+        </Link>
+        <Link to="/culture" className="navitem">
+          Culture
+        </Link>
+        <span className="navitem pagename">#INKED</span>
+        <Link to="/tattoostyles" className="navitem">
+          Tattoo Styles
+        </Link>
+        <Link to="/login" className="navitem">
+          Login
+        </Link>
       </ul>
 
       <Switch>
         <Route path="/culture">
           <Culture />
         </Route>
-        <Route path="/tattoostyles" exact>
+        <Route exact path="/tattoostyles" >
           <TattooStyles />
         </Route>
-        <Route path="/tattoostyles/:styleId" exact>
+        <Route exact path="/tattoostyles/:styleId" >
           <TattooStylesInfo />
         </Route>
         <Route path="/login">
@@ -35,10 +43,6 @@ export default function App() {
           <Home />
         </Route>
       </Switch>
-
-      <footer>
-      {MOCK_DATA.HOME.footer}
-      </footer>
     </Router>
   );
 }

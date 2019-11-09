@@ -2,7 +2,7 @@ const MOCK_DATA = {
   HOME: {
     header: "#INKED",
     quote: "“My body is my journal, and my tattoos are my story.”",
-    footer: "Contact us:"
+    footer: "Arsen Kvartiuk | 2019"
   },
   CULTURE: {
     header: "Tattoo Culture Around the Globe",

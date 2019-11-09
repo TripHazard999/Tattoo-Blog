@@ -1,0 +1,28 @@
+@import '../../Assets/_vars';
+
+.homewrapper {
+  height: calc(100vh - 50px);
+  background-image: url(https://rockstone.rocks/wp-content/uploads/2019/03/tatu.jpg);
+  display: flex;
+  flex-direction: column;
+ 
+  h1 {
+    color: $color;
+    text-align: center;
+    font-size: 10em;
+    margin-top: 60px;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 10px black;
+    font-family: $font-family;
+  }
+  p {
+    color: $color;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 60px;
+    text-shadow: 5px 5px 10px black;
+    letter-spacing: 2px;
+    font-family: $font-family;
+
+  }
+}
