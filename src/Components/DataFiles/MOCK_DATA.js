@@ -35,8 +35,8 @@ const MOCK_DATA = {
     header: "The Most Popular Tattoo Styles"
   },
   LOGIN: {
-      header: "Welcome!",
-      login: "Login"
+    header: "Welcome!",
+    login: "Login"
   }
 };
 

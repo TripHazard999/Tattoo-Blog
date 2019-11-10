@@ -1,0 +1,40 @@
+@import "../../Assets/_vars";
+
+.infowrapper {
+  background: linear-gradient(45deg, #200122, #6f0000);
+  position: absolute;
+  width: 100%;
+  h1 {
+    text-align: center;
+    margin-top: 15px;
+    color: $color;
+    font-family: $font-family;
+    font-size: $header-size;
+    text-shadow: 5px 5px 10px black;
+    letter-spacing: 1px;
+  }
+  .bodywrapper {
+    border: 2px solid black;
+    margin: 20px 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    p {
+      text-align: center;
+      color: $color;
+      text-shadow: 5px 5px 10px black;
+      font-family: $font-family;
+      letter-spacing: 1px;
+      margin: 20px 30px 50px;
+    }
+    .img {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      img {
+        margin: 30px 60px;
+        height: 500px;
+        width: 450px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}

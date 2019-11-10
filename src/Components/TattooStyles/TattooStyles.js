@@ -6,18 +6,24 @@ import MOCK_DATA from "../DataFiles/MOCK_DATA";
 export default function TattooStyles() {
   useRouteMatch();
   return (
-    <div>
+    <div className="wrapperttoostyles">
       <h1>{MOCK_DATA.TATTOOSTYLES.header}</h1>
 
-      <ul>
+      <ul className="styleslist">
         {TattooStylesArr.map(item => (
-          <div>
-            <img src={item.img}></img>
+          <div className="test">
+            <img src={item.img} className="stylesimg" alt="tattoophoto"></img>
             <br />
-            {item.description}
+            <p>{item.description}</p>
             <br />
             <li>
-              <Link to={`/TattooStyles/${item.id}`}>{item.title}</Link>
+              <Link
+                to={`/TattooStyles/${item.id}`}
+                type="button"
+                className="button"
+              >
+                {item.title}
+              </Link>
             </li>
           </div>
         ))}

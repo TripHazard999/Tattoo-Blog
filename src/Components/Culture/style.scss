@@ -1,0 +1,51 @@
+@import "../../Assets/_vars";
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(45deg, #8e0e00, #1f1c18);
+  h1 {
+    text-align: center;
+    margin-top: 15px;
+    color: $color;
+    font-family: $font-family;
+    font-size: $header-size;
+    text-shadow: 5px 5px 10px black;
+  }
+  .cultureinfo {
+    margin: 50px 0 50px 0;
+    .tattooinfo {
+      height: 400px;
+      margin: 0 150px 0 150px;
+      p {
+        width: 450px;
+        padding-top: 20px;
+        float: right;
+        text-align: center;
+        color: $color;
+        font-family: $font-family;
+        font-size: $paragrapg-size;
+        text-shadow: 5px 5px 10px black;
+      }
+      img {
+        box-shadow: 10px 10px 30px rgb(0, 0, 0);
+      }
+      .textleft {
+        float: left;
+      }
+    }
+    .textcenter {
+      text-align: center;
+      color: $color;
+      font-family: $font-family;
+      font-size: $paragrapg-size;
+      text-shadow: 5px 5px 10px black;
+    }
+    .cultureimg {
+      width: 500px;
+    }
+    .imgright {
+      float: right;
+    }
+  }
+}

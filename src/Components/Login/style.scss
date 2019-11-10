@@ -1,5 +1,5 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import '../../Assets/vars';
+@import "../../Assets/vars";
 
 .loginwrapper {
   height: calc(100vh - 50px);
@@ -7,14 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // .loginform {
-  //     margin: 100px 500px;
-  //     padding: 100px;
-  //     text-align:center;
-  //     align-items: center;
-  //     background-color: blanchedalmond;
-
-  // }
   .diamond {
     position: absolute;
     border: 7px solid;
@@ -33,14 +25,12 @@
     flex-direction: column;
     text-align: center;
     .test {
-        border-bottom: 3px solid white;    
+      border-bottom: 3px solid white;
     }
     .formitem {
       margin: 3px 5px 0 5px;
       font-family: $font-family;
       letter-spacing: 1px;
-
-      
     }
     input {
       height: 30px;
@@ -48,9 +38,7 @@
       border: none;
       outline: none;
       background: none;
-    //   border-bottom: 3px solid white;
       color: white;
-      // padding: 5px;
     }
     .button {
       align-self: center;
@@ -58,7 +46,7 @@
       border: none;
       border-radius: 15px;
       height: 45px;
-      background: linear-gradient(140deg,  #0f3443 ,#34e89e);
+      background: linear-gradient(140deg, #0f3443, #34e89e);
       color: white;
       margin-top: 15px;
       font-size: 1.5rem;
@@ -66,39 +54,5 @@
       padding-bottom: 5px;
       font-family: $font-family;
     }
-    
   }
-
-  // .d192 {
-  //         display: flex;
-  //         width: 400px;
-  //     height: 400px;
-  //     background: #1b5314;
-  //     border: 5px solid red;
-  // /* Rotate */
-
-  //     // transform: rotate(-45deg);
-  //     border-radius: 1;
-  // /* Rotate Origin */
-
-  //     transform-origin: 0 100%;
-  //     align-items: center;
-  //     justify-content: center;
-  // width: 0;
-  // height: 0;
-  // border: 50px solid transparent;
-  // border-bottom-color: red;
-  // position: relative;
-  // top: -50px;
-  // }
-  // .d192:after {
-  // content: '';
-  // position: absolute;
-  // left: -50px;
-  // top: 50px;
-  // width: 0;
-  // height: 0;
-  // border: 50px solid transparent;
-  // border-top-color: red;
-  //     }
 }

@@ -4,8 +4,7 @@ import Home from "./Components/Home/Home";
 import Culture from "./Components/Culture/Culture";
 import TattooStyles from "./Components/TattooStyles/TattooStyles";
 import Login from "./Components/Login/Login";
-import TattooStylesInfo from "./Components/TattooStyles/TatooStylesInfo";
-import MOCK_DATA from "./Components/DataFiles/MOCK_DATA";
+import TattooStylesInfo from "./Components/TattooStylesInfo/TatooStylesInfo";
 
 export default function App() {
   return (
@@ -30,10 +29,10 @@ export default function App() {
         <Route path="/culture">
           <Culture />
         </Route>
-        <Route exact path="/tattoostyles" >
+        <Route exact path="/tattoostyles">
           <TattooStyles />
         </Route>
-        <Route exact path="/tattoostyles/:styleId" >
+        <Route exact path="/tattoostyles/:styleId">
           <TattooStylesInfo />
         </Route>
         <Route path="/login">
